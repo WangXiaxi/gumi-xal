@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>暑期宅翻天</title>
+    <script type="text/javascript" src="../js/flexible.js"></script>
+    <link rel="stylesheet" href="../css/common.min.css">
+    <link rel="stylesheet" href="../css/index.min.css">
+</head>
+<body id="index">
+    <section class="container">
+        <div class="activity">
+            <div class="logo">
+                <img src="../img/logo.png" />
+                <div class="rule"></div>
+            </div>
+            <div class="turntable">
+                <img src="../img/turntable.png" />
+                <div class="turntable-btn">
+                    <img src="../img/turntable-btn.png" />
+                    <a href="javaScript:;" class="prizeInfo"></a>
+                </div>
+
+                <!-- 摇一摇动图 -->
+                <div class="dialog dialog__yaoyiyao">
+                    <div class="dialog__content">
+                        <img src="../img/yaoyiyao.gif" class="yaoyiyao" />
+                    </div>
+                </div>
+
+            </div>
+            <div class="info">
+                <div class="records">
+                    <div class="tip">
+                        <div class="arrow"></div>
+                        <div>中奖纪录</div>
+                    </div>
+                    <div id="oDiv">
+                        <ul id="oUl">
+                            <li><span class="phone">18120183635 06-15 10:30</span><span class="prize">5M(流量红包)</span></li>
+                            <li><span class="phone">15962535225 06-15 11:30</span><span class="prize">5M(流量红包)</span></li>
+                            <li><span class="phone">45231453453 06-15 12:30</span><span class="prize">5M(流量红包)</span></li>
+                            <li><span class="phone">48324583405 06-15 12:30</span><span class="prize">5M(流量红包)</span></li>
+                            <li><span class="phone">52888855555 06-15 12:30</span><span class="prize">5M(流量红包)</span></li>
+                            <li><span class="phone">42000533778 06-15 12:30</span><span class="prize">5M(流量红包)</span></li>
+                            <li><span class="phone">20442582821 06-15 12:30</span><span class="prize">5M(流量红包)</span></li>
+                            <li><span class="phone">89552400212 06-15 12:30</span><span class="prize">5M(流量红包)</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="operation">
+                    <div class="detail">
+                        <label class="number">手机号码:18120632653</label>
+                        <label class="count">剩余抽奖次数:<span class="highlight">100</span></label>
+                    </div>
+                    <a href="moreActivity.html"><button class="mg-btn">更多抽奖活动</button></a>
+                    <a href="record.html"><button class="mg-btn btn-info">我的中奖纪录</button></a>
+                </div>
+                <div class="partner">
+                    <span class="company">咪咕游戏版权所有</span>
+                    <a href="javaScript:;" class="link2">发行合作</a>
+                    <a href="javaScript:;" class="link1">渠道合作</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--活动奖品-->
+    <div class="overlay overlay__prize"></div>
+    <div class="dialog dialog__prize">
+        <div class="dialog__content">
+            <span class="dialog__close"></span>
+            <div class="bg_turntable">
+                <img src="../img/turntable.png" />
+            </div>
+            <div class="bg_hands"></div>
+            <p>手机、话费、流量、礼包码、点数</p>
+            <p class="deepenfont">请马上摇动手机</p>
+        </div>
+    </div>
+<!--提示框-->
+    <div class="overlay overlay__public"></div>
+    <!--活动规则-->
+    <div class="dialog dialog__rule">
+        <div class="dialog__hd">
+            活动规则
+            <span class="iconfont icon-iconfonticonfontclose dialog__close"></span>
+        </div>
+        <div class="dialog__content">
+            <p>1、7月10日-10月10日期间，用户登录活动页面，即可获得1次抽奖机会。<br/>
+                2、关注微信服务号"咪咕游戏吧",即可再得1次抽奖机会。<br/>
+                3、咪咕电视游戏礼包兑换码将通过短信实时发放，请注意查收。你可登录江苏移动、浙江移动魔百盒客户端，移动到游戏栏目，下载安装进入礼包对应的游戏，即可在游戏首页兑换区输入礼包码获得丰厚的奖品。新用户可拨打10086办理魔百盒业务（装宽带免费送盒子哦！）<br/>
+                4、手机话费、全网流量奖品将在次月10日前发放至您参与活动时绑定的手机号码中。（用户更换绑定手机号码行为在领取后发生，奖项仍发放至原绑定号码中）。<br/>
+                5、咪咕游戏“点数”奖品将自动充值到您咪咕游戏手机号账户中，可以等值冲抵任意话费支付的道具消费（100点=1元）<br/>
+                6、获奖详情可通过中奖记录查询<br/>
+                7、手机大奖的中奖用户将由工作人员电话联系发放。<br/>
+                8、该活动仅面向江苏、浙江两省的移动用户开放。<br/>
+                打开魔百盒，尽情享受您充实的暑期生活吧！——咪咕电视游戏</p>
+        </div>
+    </div>
+
+    <!--摇一摇抽奖提示-->
+    <div class="dialog dialog__msg">
+        <div class="dialog__content">
+            <p class="desc">您的抽奖次数已用完，请您点击活动规则按钮查看如何获取更多抽奖机会</p> <!--文字垂直居中加class:"desc"-->
+        </div>
+        <div class="dialog__ft centerbtn"><!--按钮居中请加class:"centerbtn"-->
+            <button class="btn close">知道了</button>
+        </div>
+    </div>
+
+
+
+    <audio src="../audio/yaoyiyao.wav" loop="loop" id="bgmusic">您的浏览器不支持 video 标签。</audio>
+</body>
+<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var audio = document.getElementById("bgmusic");
+        $(".container, .activity").css({'background':'#fb4c1f'});
+
+        //每3秒轮播一条中奖纪录
+        setInterval( function autoScroll(){
+            $("#oDiv").find("#oUl").animate({
+                marginTop : "-18px"
+            },500,function(){
+                $(this).css({marginTop : "0px"}).find("li:first").appendTo(this);
+            });
+        },3000);
+        //处理手机号码*号显示
+        $("#oDiv .phone").each(function(){
+            var text = $(this).text(),
+                mphone = text.substr(3,4);
+            $(this).text(text.replace(mphone,"****"));
+        });
+        //查看活动奖品信息
+        $(".prizeInfo").on('click', function(){
+            //todo:后台获取奖品信息
+            $(".overlay__prize,.dialog__prize").show();
+            setTimeout(function(){
+                $(".overlay__prize,.dialog__prize").fadeOut();
+            },3000); //3秒后自动消失
+        });
+        //关闭活动奖品信息
+        $(".dialog__prize .dialog__close").on('click', function(){
+            $(".overlay__prize,.dialog__prize").hide();
+        });
+
+        //查看游戏规则
+        $(".rule").on('click', function(){
+            $(".overlay__public,.dialog__rule").show();
+        });
+        $(".dialog__close,.close").on('click', function(){
+            $(".overlay__public,.dialog").hide();
+        });
+
+        /*摇一摇*/
+        var SHAKE_THRESHOLD = 2000;
+        var last_update = 0;
+        var x = y = z = last_x = last_y = last_z = 0;
+        if (window.DeviceMotionEvent) {
+            window.addEventListener('devicemotion', deviceMotionHandler, false);
+        } else {
+            alert('本设备不支持devicemotion事件');
+        }
+        function deviceMotionHandler(eventData) {
+            var acceleration = eventData.accelerationIncludingGravity;
+            var curTime = new Date().getTime();
+            if ((curTime - last_update) > 100) {
+                var diffTime = curTime - last_update;
+                last_update = curTime;
+                x = acceleration.x;
+                y = acceleration.y;
+                z = acceleration.z;
+                var speed = Math.abs(x + y + z - last_x - last_y - last_z) / diffTime * 10000;
+                var status = document.getElementById("status");
+                if (speed > SHAKE_THRESHOLD) {
+                    doResult();
+                }
+                last_x = x;
+                last_y = y;
+                last_z = z;
+            }
+        }
+        function doResult() {
+            if(!$(".dialog__yaoyiyao").is(":hidden") || !$(".dialog__msg").is(":hidden")) return;
+            audio.play(); //播放音频
+            $(".overlay__prize,.dialog__prize").hide(); //隐藏活动奖品信息提示框
+            $(".overlay__public,.dialog__yaoyiyao").show(); //显示蒙层和loading
+            setTimeout(function(){
+                $(".dialog__yaoyiyao").hide(); //隐藏loading
+                $(".dialog__msg").show(); //显示提示信息，比如没有抽奖机会提示
+                audio.pause(); //暂停播放音频
+                //todo:后台操作
+
+            }, 5000);
+        }
+    });
+</script>
+</html>
